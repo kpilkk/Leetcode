@@ -12,3 +12,6 @@ solved leetcode problems
 
 **4th problem**
 [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+
+**5th problem**
+[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
