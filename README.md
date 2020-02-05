@@ -15,3 +15,7 @@ solved leetcode problems
 
 **5th problem**
 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+
+**6th problem**
+[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+[Explanation](https://leetcode.com/problems/reverse-linked-list-ii/discuss/30709/Talk-is-cheap-show-me-the-code-(and-DRAWING))
