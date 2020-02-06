@@ -32,3 +32,9 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **9th problem**
 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 [Explanation](https://leetcode.com/articles/validate-binary-search-tree/)
+
+**10th problem**
+[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+[Explanation](https://leetcode.com/articles/kth-smallest-element-in-a-bst/)<br/>
+
+[Must Read](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec)
