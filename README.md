@@ -24,3 +24,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **7th problem**
 [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 [Explanation](https://leetcode.com/articles/longest-substring-without-repeating-characters/#)
+
+**8th problem**
+[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+[Explanation](https://leetcode.com/articles/binary-tree-inorder-traversal/)
