@@ -27,4 +27,4 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 
 **8th problem**
 [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
-[Explanation](https://leetcode.com/articles/binary-tree-inorder-traversal/)
+[Explanation](https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/31231/C%2B%2B-Iterative-Recursive-and-Morris)
