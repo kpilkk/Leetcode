@@ -38,3 +38,8 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 [Explanation](https://leetcode.com/articles/kth-smallest-element-in-a-bst/)<br/>
 
 [Must Read](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec)
+
+
+**11th problem**
+[Next Permutation](https://leetcode.com/problems/next-permutation/)
+[Explanation](https://leetcode.com/problems/next-permutation/solution/)
