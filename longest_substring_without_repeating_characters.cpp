@@ -21,7 +21,7 @@ class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
         int n = s.length();
-        set<int> s;
+        set<char> s;
         int ans = 0, i=0, j=0;
         while(i<n && j<n){
             if(s.find(s[j])==s.end()){
