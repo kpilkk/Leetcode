@@ -51,3 +51,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **13th problem**
 [Find Permutation](https://leetcode.com/problems/find-permutation/)
 [Explanation](https://leetcode.com/articles/find-permutation/)
+
+**14th problem**
+[Permutations II](https://leetcode.com/problems/permutations-ii/)
+[Explanation](https://leetcode.com/problems/permutations-ii/discuss/18669/C%2B%2B-backtracking-and-nextPermutation)
