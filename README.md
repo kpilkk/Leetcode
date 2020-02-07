@@ -43,3 +43,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **11th problem**
 [Next Permutation](https://leetcode.com/problems/next-permutation/)
 [Explanation](https://leetcode.com/problems/next-permutation/solution/)
+
+**12th problem**
+[Permutations](https://leetcode.com/problems/permutations/)
+[Explanation](https://leetcode.com/problems/permutations/discuss/18360/C%2B%2B-backtracking-and-nextPermutation)
