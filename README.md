@@ -56,6 +56,6 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 [Permutations II](https://leetcode.com/problems/permutations-ii/)
 [Explanation](https://leetcode.com/problems/permutations-ii/discuss/18669/C%2B%2B-backtracking-and-nextPermutation)
 
-**15th proble**
+**15th problem**
 [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 [Explanation](https://leetcode.com/articles/remove-duplicates-from-sorted-array/#)
