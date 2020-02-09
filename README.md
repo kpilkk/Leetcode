@@ -59,3 +59,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **15th problem**
 [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 [Explanation](https://leetcode.com/articles/remove-duplicates-from-sorted-array/#)
+
+**16th problem**
+[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+[Explanation](https://leetcode.com/articles/longest-consecutive-sequence/#)
