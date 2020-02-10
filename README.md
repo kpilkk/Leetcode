@@ -63,3 +63,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **16th problem**
 [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 [Explanation](https://leetcode.com/articles/longest-consecutive-sequence/#)
+
+**17th problem**
+[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+[Explanation](https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/60309/C%2B%2B-STL-partition-and-heapsort)
