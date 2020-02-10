@@ -75,3 +75,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **19th problem**
 [Remove Element](https://leetcode.com/problems/remove-element/)<br/>
 Vector can be resized if there is memory constraint using resize function.
+
+**20th problem**
+[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+[Explanation](https://leetcode.com/articles/remove-nth-node-from-end-of-list/)
