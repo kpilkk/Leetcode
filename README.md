@@ -71,3 +71,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **18th problem**
 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 [Explanation](https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/12022/Short-and-Simple-Java-solution-(easy-to-understand))
+
+**19th problem**
+[Remove Element](https://leetcode.com/problems/remove-element/)<br/>
+Vector can be resized if there is memory constraint using resize function.
