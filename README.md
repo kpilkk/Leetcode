@@ -67,3 +67,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **17th problem**
 [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 [Explanation](https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/60309/C%2B%2B-STL-partition-and-heapsort)
+
+**18th problem**
+[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+[Explanation](https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/12022/Short-and-Simple-Java-solution-(easy-to-understand))
