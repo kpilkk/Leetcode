@@ -83,3 +83,7 @@ Vector can be resized if there is memory constraint using resize function.
 **21st problem**
 [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
 [Explanation](https://leetcode.com/problems/linked-list-cycle-ii/discuss/44781/Concise-O(n)-solution-by-using-C%2B%2B-with-Detailed-Alogrithm-Description)
+
+**22nd problem**
+[Single Number](https://leetcode.com/problems/single-number/)
+[Explanation](https://leetcode.com/articles/single-number/)
