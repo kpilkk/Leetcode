@@ -87,3 +87,10 @@ Vector can be resized if there is memory constraint using resize function.
 **22nd problem**
 [Single Number](https://leetcode.com/problems/single-number/)
 [Explanation](https://leetcode.com/articles/single-number/)
+
+
+**23rd problem**
+[Happy Number](https://leetcode.com/problems/happy-number/)
+[Exlanation 1](https://leetcode.com/problems/happy-number/discuss/57092/4-C%2B%2B-Solutions-with-Explanations)
+[Exlanation 2](https://leetcode.com/problems/happy-number/discuss/56917/My-solution-in-C(-O(1)-space-and-no-magic-math-property-involved-))
+
