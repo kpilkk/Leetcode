@@ -94,3 +94,7 @@ Vector can be resized if there is memory constraint using resize function.
 [Exlanation 1](https://leetcode.com/problems/happy-number/discuss/57092/4-C%2B%2B-Solutions-with-Explanations)
 [Exlanation 2](https://leetcode.com/problems/happy-number/discuss/56917/My-solution-in-C(-O(1)-space-and-no-magic-math-property-involved-))
 
+**24th problem**
+[Add Digits](https://leetcode.com/problems/add-digits/)
+[Explanation](https://leetcode.com/problems/add-digits/discuss/68580/Accepted-C%2B%2B-O(1)-time-O(1)-space-1-Line-Solution-with-Detail-Explanations)
+
