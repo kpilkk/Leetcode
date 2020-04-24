@@ -98,3 +98,7 @@ Vector can be resized if there is memory constraint using resize function.
 [Add Digits](https://leetcode.com/problems/add-digits/)
 [Explanation](https://leetcode.com/problems/add-digits/discuss/68580/Accepted-C%2B%2B-O(1)-time-O(1)-space-1-Line-Solution-with-Detail-Explanations)
 
+**25th problem**
+[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+[Explanation](https://leetcode.com/problems/maximum-subarray/discuss/20452/C%2B%2B-DP-and-Divide-and-Conquer)
+
