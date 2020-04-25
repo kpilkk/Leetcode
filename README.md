@@ -102,3 +102,7 @@ Vector can be resized if there is memory constraint using resize function.
 [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 [Explanation](https://leetcode.com/problems/maximum-subarray/discuss/20452/C%2B%2B-DP-and-Divide-and-Conquer)
 
+**26th problem**
+[Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+[Explanation](https://leetcode.com/problems/move-zeroes/solution/)
+
