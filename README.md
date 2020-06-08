@@ -106,3 +106,7 @@ Vector can be resized if there is memory constraint using resize function.
 [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 [Explanation](https://leetcode.com/problems/move-zeroes/solution/)
 
+**27th problem**
+[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+[Explanation](https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c%2B%2B-solution-O(1)-space-and-O(n)-time)
+
