@@ -110,3 +110,7 @@ Vector can be resized if there is memory constraint using resize function.
 [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 [Explanation](https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c%2B%2B-solution-O(1)-space-and-O(n)-time)
 
+**28th problem**
+[Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+[Explanation](https://leetcode.com/articles/merge-intervals/)
+
