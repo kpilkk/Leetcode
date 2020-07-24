@@ -114,3 +114,6 @@ Vector can be resized if there is memory constraint using resize function.
 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 [Explanation](https://leetcode.com/articles/merge-intervals/)
 
+**29th problem**
+[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) 
+[Explanation](https://leetcode.com/articles/find-minimum-in-rotated-sorted-array/)
