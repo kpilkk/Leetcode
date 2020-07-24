@@ -116,4 +116,4 @@ Vector can be resized if there is memory constraint using resize function.
 
 **29th problem**
 [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) 
-[Explanation](https://leetcode.com/articles/find-minimum-in-rotated-sorted-array/)
+[Explanation](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/discuss/48499/4ms-simple-C%2B%2B-code-with-explanation)
