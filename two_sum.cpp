@@ -14,19 +14,18 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<int, int> s;
-        vector<int> ans;
-        int i;
-        for(i=0;i<nums.size();++i){
+        map<int, int> temp;
+        
+        int n = nums.size();
+        
+        for(int i = 0; i < n; ++i){
             int complement = target - nums[i];
-            if(s.find(complement)!=s.end()){
-                ans.push_back(s[complement]);
-                ans.push_back(i);
-                break;
+            if(temp.find(complement) != temp.end()){
+                return {i, temp[complement]};
             }
-            else
-                s.insert(make_pair(nums[i], i));
+            temp.insert(pair<int, int> (nums[i], i));
         }
-        return ans;
+        
+        return {0, 0};
     }
 };
