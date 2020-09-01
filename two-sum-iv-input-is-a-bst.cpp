@@ -31,3 +31,31 @@ private:
         return find(root->left, k, temp) || find(root->right, k, temp);
     }
 };
+
+// Approach #2 Using BFS and HashSet
+
+class Solution {
+public:
+    bool findTarget(TreeNode* root, int k) {
+        set<int> temp;
+        queue<TreeNode*> q;
+        
+        q.emplace(root);
+        while(!q.empty()){
+            if(q.front() != NULL){
+                TreeNode *node = q.front();
+                q.pop();
+                if(temp.find(k - node->val) != temp.end())
+                    return true;
+                temp.emplace(node->val);
+                q.emplace(node->right);
+                q.emplace(node->left);
+            }
+            else{
+                q.pop();
+            }
+        }
+        return false;
+    }
+};
+
