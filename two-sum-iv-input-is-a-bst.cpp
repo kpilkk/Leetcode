@@ -59,3 +59,34 @@ public:
     }
 };
 
+// Approach #3 Using BST
+
+class Solution {
+public:
+    bool findTarget(TreeNode* root, int k) {
+        vector<int> temp;
+        inorder(root, temp);
+        
+        int l = 0, r = temp.size()-1;
+        
+        while(l<r){
+            int sum = temp[l] + temp[r];
+            if(sum==k)
+                return true;
+            else if(sum<k)
+                l++;
+            else
+                r--;
+        }
+        return false;
+    }
+    
+private:
+    void inorder(TreeNode* root, vector<int>& temp){
+        if(root == NULL)
+            return;
+        inorder(root->left, temp);
+        temp.push_back(root->val);
+        inorder(root->right, temp);
+    }
+};
