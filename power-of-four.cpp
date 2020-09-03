@@ -1,5 +1,36 @@
 // https://leetcode.com/problems/power-of-four/
 
+// Brute force
+class Solution {
+public:
+    bool isPowerOfFour(int num) {
+        while(num > 1) {
+            if(num % 4)return false;
+            num /= 4;
+        }
+        return num == 1;
+    }
+};
+
+/*
+    Conditions for a number to be the power of four
+    1. No of Set Bit Always Be Only ONE 
+    2. That SetBit Possition Should Be always In odd Place [ starting from Left ]
+*/
+
+class Solution {
+public:
+    bool isPowerOfFour(int num) {
+        if(num<0)return false;
+        int no_of_one = 0,pos = 1,ones_pos = 0;
+        while(num){
+            if(num&1)no_of_one+=1,one_pos = pos;
+            num>>=1,pos+=1;
+        }
+        return no_of_one==1 && one_pos&1;
+    }
+};
+
 // Solution without any loops or recursion
 
 class Solution {
