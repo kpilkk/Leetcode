@@ -23,6 +23,6 @@ public:
 class Solution {
 public:
     bool isPowerOfFour(int num) {
-        return (n>0) && (!(num-1)&num)==0 && (num-1)%3==0;
+        return (num>0) && (!(num-1)&num)==0 && (num-1)%3==0;
     }
 };
