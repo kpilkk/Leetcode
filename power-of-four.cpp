@@ -5,6 +5,7 @@
 class Solution {
 public:
     bool isPowerOfFour(int num) {
+        // code will fail for minimum value of integer i.e. It will underflow if (num>0) is not included below
         return ((num>0) && !(num&(num-1)) && (num&0x55555555));
     }
 };
@@ -16,3 +17,12 @@ public:
   locate at the odd location,for example,16.It's binary is 00010000.
   So we can use '0x55555555' to check if the '1' bit is in the right place. 
 */
+
+// 2nd solution 
+
+class Solution {
+public:
+    bool isPowerOfFour(int num) {
+        return (n>0) && (!(num-1)&num)==0 && (num-1)%3==0;
+    }
+};
