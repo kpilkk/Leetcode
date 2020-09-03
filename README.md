@@ -121,3 +121,7 @@ Vector can be resized if there is memory constraint using resize function.
 **30th problem**
 [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 [Explanation](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/discuss/48883/C%2B%2B-binary-%2B-linear-search)
+
+**31st problem**
+[Power of Four](https://leetcode.com/problems/power-of-four/)
+[Explanation](https://leetcode.com/problems/power-of-four/discuss/772428/C%2B%2B-Four-Solution-or-Explain-or-Naive-or-One-Liner-orBit-Manipulation)
