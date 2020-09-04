@@ -1,4 +1,32 @@
-// 1st slution
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+// Brute Force : Time Limit Exceded
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int n = s.length();
+        int ans = 0;
+        for(int i = 0; i < n; ++i){
+            for(int j = i + 1; j <= n; ++j){
+                if(allUnique(s, i, j))
+                    ans = max(ans, j - i);
+            }
+        }
+        return ans;
+    } 
+private:
+    bool allUnique(string s, int start, int end){
+        set<char> temp;
+        for(int i = start; i < end; ++i) {
+            char ch = s[i];
+            if(temp.find(ch) != temp.end()) return false;
+            temp.emplace(ch);
+        }
+        return true;
+    }
+};
+
+// 2nd slution
 
 class Solution {
 public:
@@ -16,7 +44,7 @@ public:
     }
 };
 
-// 2nd solution
+// 3rd solution
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
