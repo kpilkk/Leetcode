@@ -38,7 +38,8 @@ public:
             if(st.find(s[j])!=st.end())
                 i = max(st[s[j]], i);
             ans = max(ans, j-i+1);
-            st.insert(make_pair(s[j], j+1));
+//             st.insert(make_pair(s[j], j+1));
+            st[s[j]] = j + 1;
         }
         return ans;
     }
