@@ -129,3 +129,7 @@ Vector can be resized if there is memory constraint using resize function.
 **32nd problem**
 [XOR operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)
 
+**33rd problem**
+[Multiply Strings](https://leetcode.com/problems/multiply-strings/)
+[Explanation](https://leetcode.com/problems/multiply-strings/discuss/17646/Brief-C++-solution-using-only-strings-and-without-reversal/158637)
+
