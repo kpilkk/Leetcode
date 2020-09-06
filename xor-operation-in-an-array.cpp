@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/xor-operation-in-an-array/submissions/
+// https://leetcode.com/problems/xor-operation-in-an-array/
 
 class Solution {
 public:
