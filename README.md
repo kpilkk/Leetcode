@@ -125,3 +125,7 @@ Vector can be resized if there is memory constraint using resize function.
 **31st problem**
 [Power of Four](https://leetcode.com/problems/power-of-four/)
 [Explanation](https://leetcode.com/problems/power-of-four/discuss/772428/C%2B%2B-Four-Solution-or-Explain-or-Naive-or-One-Liner-orBit-Manipulation)
+
+**32nd problem**
+[XOR operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)
+
