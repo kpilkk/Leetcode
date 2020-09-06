@@ -133,3 +133,6 @@ Vector can be resized if there is memory constraint using resize function.
 [Multiply Strings](https://leetcode.com/problems/multiply-strings/)
 [Explanation](https://leetcode.com/problems/multiply-strings/discuss/17646/Brief-C++-solution-using-only-strings-and-without-reversal/158637)
 
+**34th problem**
+[Plus One](https://leetcode.com/problems/add-two-numbers/)
+
