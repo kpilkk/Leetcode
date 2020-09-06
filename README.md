@@ -138,4 +138,5 @@ Vector can be resized if there is memory constraint using resize function.
 
 **35th problem**
 [Add Strings](https://leetcode.com/problems/add-strings/)
+[Explanation](https://leetcode.com/problems/add-strings/discuss/90453/C%2B%2B_Accepted_13ms)
 
