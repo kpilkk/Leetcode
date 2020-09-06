@@ -141,5 +141,5 @@ Vector can be resized if there is memory constraint using resize function.
 [Explanation](https://leetcode.com/problems/add-strings/discuss/90453/C%2B%2B_Accepted_13ms)
 
 **36th problem**
-[Add Binary](https://leetcode.com/problems/add-binary/submissions/)
+[Add Binary](https://leetcode.com/problems/add-binary/)
 
