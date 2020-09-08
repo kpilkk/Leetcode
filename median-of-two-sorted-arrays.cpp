@@ -3,54 +3,42 @@
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-        int m = nums1.size(), n = nums2.size();
-        int si = m + n;
+        int m =  nums1.size();
+        int n = nums2.size();
+        int target = (m + n);
+        int i = 0, j = 0, count = 0, prev = 0;
         
-        int even = 0, mid;
-        if(si % 2 == 0){
-            even = 1;
-            mid = si / 2;
-        }
-        else{
-            mid = si / 2 + 1;
-        }
-        
-        int i = 0, j = 0, k = 0, ans = 0;
-        while(k < mid && i < m && j < n){
-            if(nums1[i] <= nums2[j]){
-                ans = nums1[i++];
-            }
-            else{
-                ans = nums2[j++];
-            }
-            k++;
-        }
-        
-        while(k < mid){
-            if(i < m){
-                ans = nums1[i++];
-            }
-            else{
-                ans = nums2[j++];
-            }            
-            k++;
-        }
-        
-        if(!even)
-            return (double)ans;
-        else{
-            double x = ans, y;
-            if(i < m && j == n){
-                y = nums1[i];
-            }
-            else if(j < n && i == m)
-                y = nums2[j];
-            else if(nums1[i] <= nums2[j])
-                y = nums1[i];
-            else
-                y = nums2[j];
+        while(true) {
+            int ans = 0;
             
-            return (x + y) / 2;
+            int x = INT_MAX;
+            int y = INT_MAX;
+            
+            if(i < nums1.size()) x = nums1[i];
+            if(j < nums2.size()) y = nums2[j];
+            
+            if(x == INT_MAX && y == INT_MAX) break;
+            
+            if(x < y) {
+                ans = x;
+                i++;
+            }
+            else {
+                ans = y;
+                j++;
+            }
+            
+            if(count == target / 2) {
+                if(target % 2 != 0) {
+                    return ans;
+                }
+                else {
+                    return (double)(prev + ans) / 2;
+                }
+            }
+            prev = ans;
+            count++;
         }
+        return 0;
     }
 };
