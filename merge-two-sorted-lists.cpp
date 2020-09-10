@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/merge-two-sorted-lists/submissions/
 
-// Without using extra memory
+// Using constant space
 
 class Solution {
 public:
