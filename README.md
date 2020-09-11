@@ -15,6 +15,7 @@ solved leetcode problems
 
 **5**.
 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+[Explanation](https://leetcode.com/problems/reverse-linked-list/solution)
 
 **6**.
 [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
