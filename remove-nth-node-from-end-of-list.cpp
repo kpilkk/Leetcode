@@ -1,90 +1,104 @@
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-/*
-Given a linked list, remove the n-th node from the end of list and return its head.
-
-Example:
-
-Given linked list: 1->2->3->4->5, and n = 2.
-
-After removing the second node from the end, the linked list becomes 1->2->3->5.
-Note:
-
-Given n will always be valid.
-
-Follow up:
-
-Could you do this in one pass?
-*/
 
 /**
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
  *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ 
 // Two pass algorithm
+
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        if(n==0) return head;
-        int count = 0;
-        ListNode *temp = head;
-        while(temp!=NULL){
-            temp=temp->next;
-            ++count;
+        ListNode* dummy = new ListNode(0);
+        dummy -> next = head;
+        int length = 0;
+        ListNode* first = head;
+        
+        while(first){
+            length++;
+            first = first -> next;
         }
-        temp = head;
-        n = count-n+1;
-        if(n<=1){
-            ListNode *t = temp;
-            temp = temp->next;
-            delete t;
-            return temp;
+        
+        length -= n;
+        first = dummy;
+        
+        while(length){
+            length--;
+            first = first -> next;
         }
-        else{
-            ListNode *prev = NULL;
-            while(n>1){
-                prev = temp;
-                temp=temp->next;
-                --n;
-            }
-            ListNode *t = prev->next;
-            prev->next = temp->next;
-            delete t;
-            return head;
-        }
+        
+        ListNode* tmp = first -> next;
+        first -> next = first -> next -> next;
+        
+        delete tmp;
+        return dummy -> next;
     }
 };
 
 // One pass algorithm
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        ListNode *dummy = new ListNode(0);
-        dummy->next = head;
+        ListNode* dummy = new ListNode(0);
+        dummy -> next = head;
+        ListNode *first = dummy, *second = dummy;
         
-        ListNode *slow = dummy, *fast = dummy;
-        for(int i=0;i<n+1;++i)
-            fast = fast->next;
-    
-        while(fast!=NULL){
-            slow = slow->next;
-            fast = fast->next;
+        while(n >= 0){
+            first = first -> next;
+            n--;
         }
         
-        ListNode *temp = slow->next;
-        slow->next = slow->next->next;
-        delete temp;
-        return dummy->next;
+        while(first){
+            first = first -> next;
+            second = second -> next;
+        }
+        
+        ListNode* tmp = second -> next;
+        second -> next = second -> next -> next;
+        if(tmp)
+            delete tmp;
+        return dummy -> next;
+    }
+};
+
+// Without dummy variable
+
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode *first = head,  *second = head;
+        
+        while(n > 1){
+            second = second -> next;
+            n--;
+        }
+        
+        ListNode* pre = NULL;
+        
+        while(second -> next){
+            pre = first;
+            first = first -> next;
+            second = second -> next;
+        }
+        // when second will reach end, first will reach the pointer of the required element to be removed
+        
+        if(first == second && pre != NULL)   // first == second, when n =1 
+            pre -> next = NULL;              // and pre != NULL, when Linked list contains only 1 element
+        else if(pre == NULL)                 // pre == NULL for the case when we need to remove 1st element
+            head = first -> next;
+        else                                 // This is for normal cases
+            pre -> next = first -> next;     // Only we need to change the pointer of previous to its next of next
+        
+        delete first;                        // delete removed element to flush the memory
+        
+        return head;
     }
 };
