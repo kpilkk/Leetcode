@@ -151,3 +151,9 @@ Vector can be resized if there is memory constraint using resize function.
 **38**.
 [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
 [Explanation](https://leetcode.com/problems/middle-of-the-linked-list/solution)
+
+**39**
+[Reorder List](https://leetcode.com/problems/reorder-list/)
+[Explanation 1](https://leetcode.com/problems/reorder-list/discuss/44992/Java-solution-with-3-steps)
+[Explanation 2](https://leetcode.com/problems/reorder-list/discuss/45003/A-concise-O(n)-time-O(1)-in-place-solution)
+
