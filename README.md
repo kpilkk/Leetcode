@@ -157,3 +157,7 @@ Vector can be resized if there is memory constraint using resize function.
 [Explanation 1](https://leetcode.com/problems/reorder-list/discuss/44992/Java-solution-with-3-steps)
 [Explanation 2](https://leetcode.com/problems/reorder-list/discuss/45003/A-concise-O(n)-time-O(1)-in-place-solution)
 
+**40**
+[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+[Explanation](https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/2481/Share-my-O(log(min(mn)))-solution-with-explanation)
+
