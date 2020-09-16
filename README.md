@@ -165,3 +165,9 @@ Vector can be resized if there is memory constraint using resize function.
 [Missing Number](https://leetcode.com/problems/missing-number/)
 [Explanation](https://leetcode.com/problems/missing-number/solution/)
 
+**42**
+[Single NUmber II](https://leetcode.com/problems/single-number-ii/)
+[Explanation 1](https://stackoverflow.com/a/59867358/7283174)
+[Explanation 2](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/176039)
+[Explanation 3](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/42094)
+
