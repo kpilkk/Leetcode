@@ -171,3 +171,8 @@ Vector can be resized if there is memory constraint using resize function.
 [Explanation 2](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/176039)
 [Explanation 3](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/42094)
 
+**43**
+[Single Number III](https://leetcode.com/problems/single-number-iii/)
+[Explanation 1](https://leetcode.com/problems/single-number-iii/discuss/68901/Sharing-explanation-of-the-solution/263808)
+[Explanation 2](https://leetcode.com/problems/single-number-iii/discuss/68901/Sharing-explanation-of-the-solution/70763)
+
