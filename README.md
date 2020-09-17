@@ -184,3 +184,5 @@ Vector can be resized if there is memory constraint using resize function.
 **45**
 [Find the Difference](https://leetcode.com/problems/find-the-difference/)
 
+**46**
+[Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
