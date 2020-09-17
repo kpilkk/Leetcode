@@ -32,3 +32,24 @@ public:
 };
 
 // It can also be solved using hash-set or hash-map
+
+class Solution {
+public:
+    bool isHappy(int n) {
+        set<int> s;
+        s.emplace(n);
+        while(n != 1){
+            int sum = 0;
+            while(n){
+                sum += (n % 10) * (n % 10);
+                n /= 10;
+            }
+            if(s.find(sum) == s.end())
+                s.emplace(sum);
+            else
+                return false;
+            n = sum;
+        }
+        return true;
+    }
+};
