@@ -181,3 +181,6 @@ Vector can be resized if there is memory constraint using resize function.
 [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 [Explanation](https://leetcode.com/problems/find-the-duplicate-number/solution/)
 
+**45**
+[Find the Difference](https://leetcode.com/problems/find-the-difference/)
+
