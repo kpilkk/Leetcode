@@ -186,3 +186,7 @@ Vector can be resized if there is memory constraint using resize function.
 
 **46**
 [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
+
+**47**
+[Rotate Image](https://leetcode.com/problems/rotate-image/)
+[Explanation](https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image)
