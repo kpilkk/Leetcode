@@ -189,4 +189,5 @@ Vector can be resized if there is memory constraint using resize function.
 
 **47**
 [Rotate Image](https://leetcode.com/problems/rotate-image/)
-[Explanation](https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image)
+[Explanation 1](https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image)
+[Explanation 2](https://stackoverflow.com/a/35438327/7283174)
