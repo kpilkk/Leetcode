@@ -70,6 +70,31 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 [Explanation](https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/60309/C%2B%2B-STL-partition-and-heapsort)
 
+   * **Blum-Floyd-Pratt-Rivest-Tarjan algorithm**
+
+    Algorithm to find kth largest element from an unsorted array in linear time.
+
+     (1) If the number of elements in an array is large .Divide the array into arrays each with 5 elements. n/5 arrays.
+
+     (2) Compute Median of these 5 elements. 
+       This you can do by sorting each group. as there are 5 elements in Each group sorting takes 5log5. 
+       For n/5 groups in total time taken is , n/5*5log5 ~ O(n)
+
+     (3) Collect Median of all in array .
+
+     (4) Recursively compute median of this array.
+
+     (5) Use this Median as Pivot in QuickSelect
+
+     Median > half of these n/5 group medians. So median > n/10 , 
+     also each median in respective group is greater then half element so in total median is greater then 3n/10 element.
+     So in total median is greater then 3n/10 and lesser then 3n/10 element 
+
+     So worst case of algorithm will obey T(n) O(n)+ T(n/5)+ T(7n/10).
+     Resulting in T(n) = O(n)
+     
+ [Explanation using Blum-Floyd-Pratt-Rivest-Tarjan algorithm](https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/259382/blum-floyd-pratt-rivest-tarjan-algorithm-that-has-a-guaranteed-on-running-time-java)
+
 **18**.
 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 [Explanation](https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/12022/Short-and-Simple-Java-solution-(easy-to-understand))
