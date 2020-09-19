@@ -93,7 +93,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
      So worst case of algorithm will obey T(n) O(n)+ T(n/5)+ T(7n/10).
      Resulting in T(n) = O(n)
      
- [Explanation using Blum-Floyd-Pratt-Rivest-Tarjan algorithm](https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/259382/blum-floyd-pratt-rivest-tarjan-algorithm-that-has-a-guaranteed-on-running-time-java)
+ [Explanation using Blum-Floyd-Pratt-Rivest-Tarjan algorithm](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)
 
 **18**.
 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
