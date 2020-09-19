@@ -73,3 +73,34 @@ public:
         return i;
     }
 };
+
+// Constant space
+
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        int n = nums.size();
+        int low = *min_element(nums.begin(), nums.end());
+        int high = *max_element(nums.begin(), nums.end());
+        
+        while(low <= high){
+            int mid = low + (high - low) / 2;
+            int countMore = 0, countEqual = 0;
+            for(int i = 0; i < n; ++i){
+                if(nums[i] > mid)
+                    ++countMore;
+                else if(nums[i] == mid)
+                    ++countEqual;
+            }
+            if(countMore < k && countMore + countEqual >= k)
+                return mid;
+        
+            else if(countMore >= k)
+                low  = mid + 1;
+        
+            else if(countMore < k && countMore + countEqual < k)
+                high = mid - 1;
+        }
+        return 0;
+    }
+};
