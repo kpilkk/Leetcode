@@ -71,7 +71,7 @@ This question can also be solved iteratively using **[Johnson and Trotter algori
 [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 [Explanation](https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/60309/C%2B%2B-STL-partition-and-heapsort)
 
-   * **Blum-Floyd-Pratt-Rivest-Tarjan algorithm**
+   * **[Blum-Floyd-Pratt-Rivest-Tarjan algorithm](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)**
 
     Algorithm to find kth largest element from an unsorted array in linear time.
 
@@ -93,8 +93,6 @@ This question can also be solved iteratively using **[Johnson and Trotter algori
 
      So worst case of algorithm will obey T(n) O(n)+ T(n/5)+ T(7n/10).
      Resulting in T(n) = O(n)
-     
- [Explanation using Blum-Floyd-Pratt-Rivest-Tarjan algorithm](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)
 
 **18**.
 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
