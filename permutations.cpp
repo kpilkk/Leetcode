@@ -1,21 +1,3 @@
-/*
-Given a collection of distinct integers, return all possible permutations.
-
-Example:
-
-Input: [1,2,3]
-Output:
-[
-  [1,2,3],
-  [1,3,2],
-  [2,1,3],
-  [2,3,1],
-  [3,1,2],
-  [3,2,1]
-]
-
-*/
-
 // 1st solution using recursion
 
 class Solution {
@@ -27,9 +9,11 @@ private:
             for(int j=i;j<nums.size();++j){
                 swap(nums[i],nums[j]);
                 permute(nums, i+1, ans);
+                // I've commented below swap because I'm not changing nums from original
+                // Because I've not used address of the vector
+                // swap(nums[i], nums[pos]);
             }
         }
-        // return ans;
     }
 public:
     vector<vector<int>> permute(vector<int>& nums) {
