@@ -48,7 +48,8 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 
 **12**.
 [Permutations](https://leetcode.com/problems/permutations/)
-[Explanation](https://leetcode.com/problems/permutations/discuss/18360/C%2B%2B-backtracking-and-nextPermutation)
+[Explanation](https://leetcode.com/problems/permutations/discuss/18360/C%2B%2B-backtracking-and-nextPermutation)<br>
+This question can also be solved iteratively using **[Johnson and Trotter algorithm](https://www.geeksforgeeks.org/johnson-trotter-algorithm/)**.
 
 **13**.
 [Find Permutation](https://leetcode.com/problems/find-permutation/)
