@@ -30,38 +30,37 @@ class Solution {
 private:
     int factorial(int n){
         int f = 1;
-        while(n>1)
+        while(n > 0){
             f *= n--;
+        }
         return f;
     }
+    
     void nextPermutation(vector<int>& nums){
-        int n = nums.size(), index=-1, k;
-        for(int i=n-2;i>=0;--i){
-            if(nums[i]<nums[i+1]){
-                index = i;
-                break;
-            }
-        }
-        if(index<0)
-            reverse(nums.begin(),nums.end());
-        else{
-            for(int j=n-1;j>index;--j){
-                if(nums[j]>nums[index]){
-                    k = j;
+        int i = nums.size() - 2;
+        while(i >= 0 && nums[i] >= nums[i + 1])
+            i--;
+        
+        if(i >= 0){
+            int j = nums.size() - 1;
+            for(; j >= 0; --j)
+                if(nums[j] > nums[i])
                     break;
-                }
-            }
-            swap(nums[index], nums[k]);
-            reverse(nums.begin()+index+1, nums.end());
+            swap(nums[i], nums[j]);
         }
+        reverse(nums.begin() + i + 1, nums.end());
     }
+    
 public:
     vector<vector<int>> permute(vector<int>& nums) {
         vector<vector<int>> ans;
-        int n = factorial(nums.size());
-        for(int i=0;i<n;++i){
-            ans.push_back(nums);
+        int n = nums.size();
+        int size = factorial(n);
+
+        ans.push_back(nums);
+        for(int i = 1; i < size; ++i){
             nextPermutation(nums);
+            ans.push_back(nums);
         }
         return ans;
     }
