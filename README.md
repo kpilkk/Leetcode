@@ -222,3 +222,6 @@ Vector can be resized if there is memory constraint using resize function.
 
 **49**
 [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)
+
+**50**
+[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
