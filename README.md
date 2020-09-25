@@ -220,3 +220,5 @@ Vector can be resized if there is memory constraint using resize function.
 **48**
 [Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)
 
+**49**
+[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)
