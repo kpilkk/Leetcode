@@ -225,3 +225,7 @@ Vector can be resized if there is memory constraint using resize function.
 
 **50**
 [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
+
+**51**
+[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+[O(n2) Explanation](https://medium.com/@bhprtk/longest-palindromic-substring-a8190fab03ff)
