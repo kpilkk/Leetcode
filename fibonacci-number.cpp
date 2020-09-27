@@ -95,3 +95,12 @@ public:
         A[1][1] = w;
     }
 };
+
+// Approach 6: Math
+class Solution {
+public:
+    int fib(int N) {
+        double phi = ( 1 + sqrt(5)) / 2;
+        return round(pow(phi, N) / sqrt(5));
+    }
+};
