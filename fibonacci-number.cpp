@@ -23,3 +23,22 @@ public:
         return arr[N];
     }
 };
+
+// Approach 3: Top-Down Approach using Memoization
+class Solution {
+public:
+    int fib(int N) {
+        if(N <= 1) return N;
+        vector<int> cache(N + 1, -1);
+        cache[0] = 0;
+        cache[1] = 1;
+        return memoize(N, cache);
+    }
+    int memoize(int N, vector<int>& cache){
+        if(cache[N] != -1)
+            return cache[N];
+        
+        cache[N] = memoize(N - 1, cache) + memoize(N - 2, cache);
+        return cache[N];
+    }
+};
