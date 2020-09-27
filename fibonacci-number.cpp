@@ -62,3 +62,36 @@ public:
         return current;
     }
 };
+
+// Approach 5: Matrix Exponentiation
+class Solution {
+public:
+    int fib(int N) {
+        vector<vector<int>> a = {{ 1, 1}, {1 , 0}};
+        vector<vector<int>> ans = {{ 1, 0}, {0, 1}};
+        
+        while(N){
+            if(N & 1){
+                multiply(ans, a);
+                N--;
+            }
+            else{
+                multiply(a, a);
+                N /= 2;
+            }
+        }
+        return ans[0][1];
+    }
+    
+    void multiply(vector<vector<int>>& A, vector<vector<int>> B){
+        int x = A[0][0] * B[0][0] + A[0][1] * B[1][0];
+        int y = A[0][0] * B[0][1] + A[0][1] * B[1][1];
+        int z = A[1][0] * B[0][0] + A[1][1] * B[1][0];
+        int w = A[1][0] * B[0][1] + A[1][1] * B[1][1];
+        
+        A[0][0] = x;
+        A[0][1] = y;
+        A[1][0] = z;
+        A[1][1] = w;
+    }
+};
