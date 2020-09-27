@@ -235,6 +235,8 @@ Vector can be resized if there is memory constraint using resize function.
 [Explanation](https://leetcode.com/problems/fibonacci-number/solution/)
 
 **53**
-[Ugly Numbers](https://leetcode.com/problems/ugly-number/)
-   * This question can also be solved using [Dynamic Programming](https://www.geeksforgeeks.org/ugly-numbers/).
+[Ugly Number](https://leetcode.com/problems/ugly-number/)
    
+**54**
+[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)
+[Explanation](https://www.geeksforgeeks.org/ugly-numbers/)
