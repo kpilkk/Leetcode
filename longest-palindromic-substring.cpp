@@ -54,3 +54,30 @@ private:
         return s.substr(begin + 1, end - begin - 1);
     }
 };
+
+
+// Manacher's algorithm
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        string ss = "$";
+        for (char c : s) {
+            ss += "#";
+            ss += c;
+        }
+        ss += "#";
+        vector<int> Len(ss.size(), 0);
+        int pivot = 0, mx = 0;
+        for (int i = 1; i < ss.size(); ++i) {
+            if (i < mx) Len[i] = min(mx - i, Len[2 * pivot - i]);
+            else Len[i] = 1;
+            while (ss[i + Len[i]] == ss[i - Len[i]]) ++Len[i];
+            if (i + Len[i] >= mx) {
+                mx = i + Len[i];
+                pivot = i;
+            }
+        }
+        int start = max_element(Len.begin(), Len.end()) - Len.begin();
+        return s.substr((start - Len[start]) / 2, Len[start] - 1);
+    }
+};
