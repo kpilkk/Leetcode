@@ -241,3 +241,7 @@ Vector can be resized if there is memory constraint using resize function.
 **54**
 [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)
 [Explanation](https://www.geeksforgeeks.org/ugly-numbers/)
+
+**55**
+[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+[Explanation](https://leetcode.com/problems/zigzag-conversion/discuss/872940/Very-Simple-C%2B%2B-solution-with-explanation)
