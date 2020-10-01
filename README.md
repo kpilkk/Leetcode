@@ -254,3 +254,6 @@ Vector can be resized if there is memory constraint using resize function.
 [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
 [Explanation](https://leetcode.com/problems/string-to-integer-atoi/solution/)
 
+**58**
+[Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+[Explanation](https://leetcode.com/problems/palindrome-number/solution/)
