@@ -250,3 +250,7 @@ Vector can be resized if there is memory constraint using resize function.
 [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 [Explanation](https://leetcode.com/problems/reverse-integer/discuss/873093/C%2B%2B-solution-beatss-100-with-explanation)
 
+**57**
+[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
+[Explanation](https://leetcode.com/problems/string-to-integer-atoi/solution/)
+
