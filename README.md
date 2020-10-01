@@ -229,7 +229,7 @@ Vector can be resized if there is memory constraint using resize function.
 **51**
 [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 [O(n2) Explanation](https://medium.com/@bhprtk/longest-palindromic-substring-a8190fab03ff)
- * This question can be solved in O(n) time using [Manachar's Algorithm](https://www.hackerearth.com/practice/algorithms/string-algorithm/manachars-algorithm/tutorial/)
+ * This question can be solved in O(n) time using [Manachar's Algorithm](https://leetcode.com/problems/longest-palindromic-substring/discuss/872849/manachers-algorithm-with-explanation-on-solution-in-c)
 
 **52**
 [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
