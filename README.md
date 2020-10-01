@@ -245,3 +245,8 @@ Vector can be resized if there is memory constraint using resize function.
 **55**
 [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 [Explanation](https://leetcode.com/problems/zigzag-conversion/discuss/872940/Very-Simple-C%2B%2B-solution-with-explanation)
+
+**56**
+[Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+[Explanation](https://leetcode.com/problems/reverse-integer/discuss/873093/C%2B%2B-solution-beatss-100-with-explanation)
+
