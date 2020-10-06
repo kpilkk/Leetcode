@@ -257,3 +257,7 @@ Vector can be resized if there is memory constraint using resize function.
 **58**
 [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 [Explanation](https://leetcode.com/problems/palindrome-number/solution/)
+
+**58**
+[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
+[Recursive and Easy DP solution](https://leetcode.com/problems/regular-expression-matching/discuss/5665/My-concise-recursive-and-DP-solutions-with-full-explanation-in-C%2B%2B)
