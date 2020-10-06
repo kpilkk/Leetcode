@@ -264,3 +264,5 @@ Vector can be resized if there is memory constraint using resize function.
    * [Concise solution with space optimization](https://leetcode.com/problems/regular-expression-matching/discuss/5684/C%2B%2B-O(n)-space-DP)
       * Solution can be optimized to use O(n) space.
       
+**59**
+[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
