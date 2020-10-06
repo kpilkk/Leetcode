@@ -261,3 +261,4 @@ Vector can be resized if there is memory constraint using resize function.
 **58**
 [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
 [Recursive and Easy DP solution](https://leetcode.com/problems/regular-expression-matching/discuss/5665/My-concise-recursive-and-DP-solutions-with-full-explanation-in-C%2B%2B)
+[Concise solution with space optimization](https://leetcode.com/problems/regular-expression-matching/discuss/5684/C%2B%2B-O(n)-space-DP)
