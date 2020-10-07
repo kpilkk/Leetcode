@@ -11,9 +11,7 @@ public:
                 left_max = max(left_max, height[j]);
             for(int j = i; j < n; ++j)
                 right_max = max(right_max, height[j]);
-            cout << left_max << " " << right_max << " ";
             ans += min(left_max, right_max) - height[i];
-            cout << ans << endl;
         }
         return ans;
     }
