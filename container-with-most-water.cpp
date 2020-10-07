@@ -15,3 +15,20 @@ public:
         return max_water;
     }
 };
+
+// Two pointer solution
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int i = 0, j = height.size() - 1;
+        int max_water = 0;
+        while(i < j){
+            max_water = max(max_water, (j - i) * min(height[i], height[j]));
+            if(height[i] < height[j])
+                ++i;
+            else
+                --j;
+        }
+        return max_water;
+    }
+};
