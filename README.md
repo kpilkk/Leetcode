@@ -266,3 +266,8 @@ Vector can be resized if there is memory constraint using resize function.
       
 **59**
 [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
+
+**60**
+[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+[Expalantion](https://leetcode.com/problems/container-with-most-water/solution/)
+[Better Explanation](https://leetcode.com/problems/container-with-most-water/discuss/6100/Simple-and-clear-proofexplanation)
