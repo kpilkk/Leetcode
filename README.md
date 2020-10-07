@@ -271,3 +271,6 @@ Vector can be resized if there is memory constraint using resize function.
 [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 [Expalantion](https://leetcode.com/problems/container-with-most-water/solution/)
 [Better Explanation](https://leetcode.com/problems/container-with-most-water/discuss/6100/Simple-and-clear-proofexplanation)
+   * The widest container (using first and last line) is a good candidate, because of its width. Its water level is the height of the smaller one of first and last line.
+   * All other containers are less wide and thus would need a higher water level in order to hold more water.
+   * The smaller one of first and last line doesn't support a higher water level and can thus be safely removed from further consideration.
