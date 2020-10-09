@@ -280,3 +280,7 @@ Vector can be resized if there is memory constraint using resize function.
 [Explanation](https://leetcode.com/problems/trapping-rain-water/solution/)
    * **Brute force**
      * For each element in the array, we find the maximum level of water it can trap after the rain, which is equal to the minimum of maximum height of bars on both the sides minus its own height.
+
+**62**
+[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
+[Explanation](https://leetcode.com/problems/roman-to-integer/discuss/886101/very-easy-solution-with-explanation-with-one-loop)
