@@ -287,3 +287,7 @@ Vector can be resized if there is memory constraint using resize function.
 
 **63**
 [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+
+**64**
+[Largest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+[Explanation](https://leetcode.com/problems/longest-common-prefix/solution/)
