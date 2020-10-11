@@ -80,3 +80,71 @@ private:
         return left.substr(0, mini);
     }
 };
+
+// Using Trie Data structure
+class TrieNode{
+public:
+    unordered_map<char, TrieNode*> children;
+    char val;
+    bool isWord = false;
+    
+    TrieNode() {}
+    
+    TrieNode(char v){
+        this -> val = v;
+    }
+};
+
+class Trie{
+private:
+    TrieNode* root;
+    
+public:
+    // Initialize your data structure here
+    Trie() {
+        root = new TrieNode();
+    }
+    
+    // Get TrieNode
+    TrieNode* getTrieNode(){
+        return root;
+    }
+    
+    // Insert a word into the tree
+    void insert(string word){
+        TrieNode* temp = root;
+        
+        for(auto ch : word){
+            if(temp -> children.find(ch) == temp -> children.end())
+                temp -> children[ch] = new TrieNode(ch);
+            temp = temp -> children[ch];
+        }
+        
+        temp -> isWord = true;
+    }
+    
+};
+
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs) {
+        // insert all keys into trie
+        Trie* t = new Trie();
+        
+        for(auto str : strs)
+            t -> insert(str);
+        
+        // Traverse the trie and find longest common prefix
+        string lcp;
+        TrieNode* curr = t -> getTrieNode();
+        
+        // Do till we find a leaf node or node has more than 1 children
+        while(curr && !curr -> isWord && (curr -> children.size() == 1)){
+            auto it = curr -> children.begin();
+            lcp += it -> first;
+            curr = it -> second;
+        }
+        
+        return lcp;
+    }
+};
