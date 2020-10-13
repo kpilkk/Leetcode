@@ -295,3 +295,7 @@ Vector can be resized if there is memory constraint using resize function.
 
 **65**
 [3 Sum](https://leetcode.com/problems/3sum/)
+
+**66**
+[3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+[Explanation](https://leetcode.com/problems/3sum-closest/solution/)
