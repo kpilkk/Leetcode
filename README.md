@@ -292,3 +292,6 @@ Vector can be resized if there is memory constraint using resize function.
 [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 [Explanation](https://leetcode.com/problems/longest-common-prefix/solution/)
 [Efficient solution and also using Trie Data structure](https://leetcode.com/problems/longest-common-prefix/discuss/561757/C%2B%2B-Memory-and-Runtime-Efficient-greater-2-Solutions%3A-1-Greedy-1-Trie-Implementation)
+
+**65**
+[3 Sum](https://leetcode.com/problems/3sum/)
