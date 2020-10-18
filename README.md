@@ -303,3 +303,4 @@ Vector can be resized if there is memory constraint using resize function.
 **67**
 [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 [Explanation](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solution/)
+[BFS Explanation](https://leetcode.com/problems/letter-combinations-of-a-phone-number/discuss/900295/Iterative-C%2B%2B-solution-using-queue-%3A-BFS-with-explanation)
