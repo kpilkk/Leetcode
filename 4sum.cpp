@@ -45,3 +45,41 @@ public:
         return ans;
     }
 };
+
+// Using k-Sum - more generalized solution
+class Solution {
+public:
+    vector<vector<int>> fourSum(vector<int>& nums, int target) {
+        sort(nums.begin(), nums.end());
+        return kSum(nums, target, 0, 4);
+    }
+    
+    vector<vector<int>> kSum(vector<int>& nums, int target, int start, int k){
+        vector<vector<int>> res;
+        if(start == nums.size() || nums[start] * k > target || target > nums.back() * k)
+            return res;
+        if(k == 2)
+            return twoSum(nums, target, start);
+        for(int i = start; i < nums.size(); ++i)
+            if(i == start || nums[i - 1] != nums[i])
+                for(auto set : kSum(nums, target - nums[i], i + 1, k - 1)){
+                    res.push_back({nums[i]});
+                    res.back().insert(end(res.back()), begin(set), end(set));
+                }
+        return res;
+    }
+    vector<vector<int>> twoSum(vector<int>& nums, int target, int start){
+        vector<vector<int>> res;
+        int l = start, r = nums.size() - 1;
+        while(l < r){
+            int sum = nums[l] + nums[r];
+            if(sum < target || (l > start && nums[l] == nums[l - 1]))
+                ++l;
+            else if(sum > target || (r < nums.size() - 1 && nums[r] == nums[r + 1]))
+                --r;
+            else
+                res.push_back({nums[l++], nums[r--]});
+        }
+        return res;
+    }
+};
