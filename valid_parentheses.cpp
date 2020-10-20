@@ -1,31 +1,4 @@
-/*
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-An input string is valid if:
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-
-Note that an empty string is also considered valid.
-
-Example 1:
-Input: "()"
-Output: true
-
-Example 2:
-Input: "()[]{}"
-Output: true
-
-Example 3:
-Input: "(]"
-Output: false
-
-Example 4:
-Input: "([)]"
-Output: false
-
-Example 5:
-Input: "{[]}"
-Output: true
-*/
+// https://leetcode.com/problems/valid-parentheses/
 
 class Solution {
 public:
@@ -47,5 +20,36 @@ public:
         }
         if(t.empty()) return true;
         else return false;
+    }
+};
+
+
+// Another form of the above solution
+class Solution {
+public:
+    bool isValid(string s) {
+        int n = s.length();
+        if(n % 2 != 0)
+            return 0;
+        
+        stack<char> temp;
+        int i = 0;
+        while(n--){
+            if(s[i] == '(' || s[i] == '[' || s[i] == '{'){
+                temp.emplace(s[i]);
+            }
+            else if(!temp.empty()){
+                char tmp = temp.top();
+                temp.pop();
+                if((tmp == '(' && s[i] != ')') || (tmp == '[' && s[i] != ']') || (tmp == '{' && s[i] != '}'))
+                    return false;
+            }
+            else
+                return false;
+            ++i;
+        }
+        if(temp.empty())
+            return true;
+        return false;
     }
 };
