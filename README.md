@@ -9,6 +9,8 @@ solved leetcode problems
 
 **3**.
 [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+[Explanation I](https://leetcode.com/problems/valid-parentheses/solution/)
+[Explanation II](https://leetcode.com/problems/valid-parentheses/discuss/903099/Very-easy-easily-understandable)
 
 **4**.
 [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
