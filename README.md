@@ -310,3 +310,6 @@ Vector can be resized if there is memory constraint using resize function.
 **68**
 [4Sum](https://leetcode.com/problems/4sum/)
 [Explanation](https://leetcode.com/problems/4sum/solution/)
+
+**69**
+[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
