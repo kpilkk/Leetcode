@@ -317,3 +317,31 @@ Vector can be resized if there is memory constraint using resize function.
 **70**
 [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 [Explanation](https://leetcode.com/problems/generate-parentheses/solution/)
+   * The goal is to print a string of “(“ ,”)” in certain order. The length of string is 2n. The constraints are that “(“s need to match “)”s.
+Without constraints, we just simply print out “(“ or “)” until length hits n. So the base case will be length ==2 n, recursive case is print out “(“ and “)”. The code will look like
+```
+    //base case
+    if(string length == 2*n) {
+    add(string);
+    return;
+    }
+    //recursive case
+    add a “(“
+    add a “)"
+```
+  * Let’s add in constraints now. We need to interpret the meanings of constraints. First, the first character should be “(“. Second, at each step, you can either print “(“ or “)”, but print “)” only when there are more “(“s than “)”s. Stop printing out “(“ when the number of “(“ s hit n. The first actually merges into the second condition.
+  * The code will be:
+```
+    //base case
+    if(string length == 2*n) {
+    add(string);
+    return;
+    }
+    //recursive case
+    if(number of “(“s < n){
+    add a “(“
+    }
+    if(number of “(“s > number of “)”s){
+    add a “)"
+    }
+```
