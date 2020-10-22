@@ -313,3 +313,7 @@ Vector can be resized if there is memory constraint using resize function.
 
 **69**
 [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+**70**
+[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+[Explanation](https://leetcode.com/problems/generate-parentheses/solution/)
