@@ -345,3 +345,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
     add a “)"
     }
 ```
+
+**71**
+[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+[Explanation](https://leetcode.com/problems/merge-k-sorted-lists/solution/)
