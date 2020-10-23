@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
 
+// Divide and Conquer
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -45,6 +46,47 @@ private:
             ans = ans -> next;
         }
         ans -> next = l1 ? l1 : l2;
+        return dummy.next;
+    }
+};
+
+// Priority Queue
+// Example : [[1,4,5],[1,3,4],[2,6]]
+class Solution {
+    struct compareNode {
+        bool operator()(ListNode* const & p1, ListNode* const & p2) const{
+            return p1 -> val > p2 -> val;
+        }
+    };
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        ListNode dummy(0);
+        ListNode* tail = &dummy;
+        
+        // construct min_heap
+        // priority_queue default constructs max_heap
+        priority_queue<ListNode*, vector<ListNode*>, compareNode> queue;
+        
+        for(int i = 0; i < lists.size(); ++i){
+            if(lists[i])
+                queue.push(lists[i]);
+        }
+        
+        // while(!queue.empty()){
+        //     cout << queue.top() -> val << " ";  // 1 , 1 , 2
+        //     queue.pop();
+        // }
+        
+        while(!queue.empty()){
+            tail -> next = queue.top();
+            // cout << queue.top() -> val<< " "; // 1 , 1 , 2 , 3 , 4 , 4 , 5 , 6
+            queue.pop();
+            tail = tail -> next;
+            
+            if(tail -> next)
+                queue.push(tail -> next);
+        }
+        
         return dummy.next;
     }
 };
