@@ -350,3 +350,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 [Explanation](https://leetcode.com/problems/merge-k-sorted-lists/solution/)
 [My Explanation](https://leetcode.com/problems/merge-k-sorted-lists/discuss/907362/C%2B%2B-solution-using-priority-queue-with-explanation-and-divide-and-conquer-method)
+
+**72**
+[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
