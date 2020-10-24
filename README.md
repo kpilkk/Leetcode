@@ -353,3 +353,4 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **72**
 [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+[My Solution](https://leetcode.com/problems/swap-nodes-in-pairs/discuss/908105/Easy-understand-Iterative-solution)
