@@ -37,3 +37,29 @@ public:
         return dummy.next;
     }
 };
+
+// Easy understand
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        if(!head)
+            return head;
+        
+        ListNode dummy(0);
+        ListNode* cur = &dummy;
+        cur -> next = head;
+        
+        while(cur -> next && cur -> next -> next){
+            cur -> next = swap(cur -> next, cur -> next -> next);
+            cur = cur -> next -> next;
+        }
+        
+        return dummy.next;
+    }
+    
+    ListNode* swap(ListNode* next1, ListNode* next2){
+        next1 -> next = next2 -> next;
+        next2 -> next = next1;
+        return next2;
+    }
+};
