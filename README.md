@@ -357,4 +357,4 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **73**
 [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
-  * This question can be solved combining methods of [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) and [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) as mentioned in my solution.
+  * This question can be solved combining methods of [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) and [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) as mentioned in [my solution](https://leetcode.com/problems/reverse-nodes-in-k-group/discuss/909747/Solution-using-known-methods-to-solve-for-Reverse-Linked-List).
