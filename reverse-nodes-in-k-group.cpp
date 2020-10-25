@@ -42,3 +42,34 @@ public:
         }
     }
 };
+
+// recursive solution using same function
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        if(k == 1)
+            return head;
+        ListNode *curr = head, *prev = nullptr, *next = nullptr;
+        int count = 0;
+        while(count++ < k && curr){
+            next = curr -> next;
+            curr -> next = prev;
+            prev = curr;
+            curr = next;
+        }
+        if(next){
+            int i = 0;
+            ListNode* temp = next;
+            while(temp && i < k){
+                temp = temp -> next;
+                i++;
+            }
+            if(i == k)
+                head -> next = reverseKGroup(next, k);
+            else
+                head -> next = next;
+        }
+        
+        return prev;
+    }
+};
