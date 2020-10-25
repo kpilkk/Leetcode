@@ -21,14 +21,14 @@ public:
         return head;
     }
     
-    // Following code is from Linked List II
+    // Following code is from Reverse Linked List II
     ListNode* reverseBetween(ListNode* head, int m, int n){
         if(m != 1){
             head -> next = reverseBetween(head -> next, m - 1, n -1);
             return head;
         }
         else{
-            // Following code is similar to Linked List I
+            // Following code is similar to Reverse Linked List
             ListNode *prev = nullptr, *next = nullptr, *temp = head;
             int count = 0;
             while(count++ < n){
