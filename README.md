@@ -354,3 +354,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **72**
 [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 [My Solution](https://leetcode.com/problems/swap-nodes-in-pairs/discuss/908105/Easy-understand-Iterative-solution)
+
+**73**
+[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+  * This question can be solved combining methods of [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) and [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) as mentioned in my solution.
