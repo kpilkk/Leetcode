@@ -102,8 +102,8 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 [Explanation](https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/12022/Short-and-Simple-Java-solution-(easy-to-understand))
 
 **19**.
-[Remove Element](https://leetcode.com/problems/remove-element/)<br/>
-Vector can be resized if there is memory constraint using resize function.
+[Remove Element](https://leetcode.com/problems/remove-element/)
+[Explanation](https://leetcode.com/problems/remove-element/solution/)
 
 **20**.
 [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
