@@ -37,6 +37,7 @@ public:
 };
 
 //2nd solution
+//  below solution will fail for testcase - [-2147483647,-2147483648]
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
@@ -49,6 +50,33 @@ public:
                 while(s.find(num+cur)!=s.end())
                     ++cur;
                 ans = max(cur, ans);
+            }
+        }
+        return ans;
+    }
+};
+
+// taking into account negative overflow
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        int n = nums.size();
+        if(n == 0) return 0;
+        if(n == 1) return 1;
+        
+        unorderd_set<int> s(nums.begin(), nums.end());
+        int ans = 1;
+        for(int i = 0; i < n; ++i){
+            if((nums[i] == INT_MAX || s.find(nums[i] + 1) == s.end()) && nums[i] != INT_MIN){
+                int len = 1;
+                int temp = nums[i] - 1;
+                while(s.find(temp) != s.end()){
+                    ++len;
+                    if(temp == INT_MIN)
+                        break;
+                    --temp;
+                }
+                ans = max(len, ans);
             }
         }
         return ans;
