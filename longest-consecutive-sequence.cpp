@@ -64,7 +64,7 @@ public:
         if(n == 0) return 0;
         if(n == 1) return 1;
         
-        unorderd_set<int> s(nums.begin(), nums.end());
+        unordered_set<int> s(nums.begin(), nums.end());
         int ans = 1;
         for(int i = 0; i < n; ++i){
             if((nums[i] == INT_MAX || s.find(nums[i] + 1) == s.end()) && nums[i] != INT_MIN){
