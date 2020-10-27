@@ -361,3 +361,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **74**
 [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+  *  This question can be solved in O(n) time using [KMP Algorithm](http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/).
+  *  [Explanation](https://leetcode.com/problems/implement-strstr/discuss/12956/C%2B%2B-Brute-Force-and-KMP) with code.
+  
