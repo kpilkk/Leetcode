@@ -364,3 +364,8 @@ Without constraints, we just simply print out “(“ or “)” until length hi
   *  This question can be solved in O(n) time using [KMP Algorithm](http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/).
   *  [Explanation](https://leetcode.com/problems/implement-strstr/discuss/12956/C%2B%2B-Brute-Force-and-KMP) with code.
   
+**75**
+[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
+  * For overflow cases, One can consider all the special cases and convert signed to unsigned integers keeping boolean sign variable separate.
+  * One shouldn't use `long` or `long long` for solving the problem.
+  
