@@ -372,3 +372,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **76**
 [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)
 [Explanation](https://leetcode.com/problems/longest-valid-parentheses/solution/)
+* Algorithm without using extra space
+  * In this approach, we make use of two counters `left` and `right`. First, we start traversing the string from the left towards the right and for every `(` encountered, we increment the left counter and for every `)` encountered, we increment the right counter. Whenever left becomes equal to right, we calculate the length of the current valid string and keep track of maximum length substring found so far. If right becomes greater than left we reset left and right to 0.
+
+  * Next, we start traversing the string from right to left and similar procedure is applied.
