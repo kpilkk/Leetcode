@@ -369,3 +369,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
   * For overflow cases, One can consider all the special cases and convert signed to unsigned integers keeping boolean sign variable separate.
   * One shouldn't use `long` or `long long` for solving the problem.
   
+**76**
+[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)
+[Explanation](https://leetcode.com/problems/longest-valid-parentheses/solution/)
