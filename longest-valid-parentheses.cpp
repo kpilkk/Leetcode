@@ -47,3 +47,26 @@ public:
         return ans;
     }
 };
+
+// Using stack
+class Solution {
+public:
+    int longestValidParentheses(string s) {
+        int ans = 0, n = s.length();
+        stack<int> temp;
+        temp.push(-1);
+        
+        for(int i = 0; i < n; ++i){
+            if(s[i] == '(')
+                temp.push(i);
+            else{
+                temp.pop();
+                if(temp.empty())
+                    temp.push(i);
+                else
+                    ans = max(ans, i - temp.top());
+            }
+        }
+        return ans;
+    }
+};
