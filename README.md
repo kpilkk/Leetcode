@@ -380,3 +380,8 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **77**
 [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)
 [Explanation](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/solution/)
+
+**78**
+[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+  * One half of the array will always be sorted.
+  
