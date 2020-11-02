@@ -52,3 +52,24 @@ public:
         return dummy.next;
     }
 };
+
+// similar as above
+class Solution {
+public:
+    ListNode* insertionSortList(ListNode* head) {
+        ListNode dummy(0);
+        ListNode *pre = &dummy, *curr = head, *next = nullptr;
+        
+        while(curr){
+            next = curr -> next;
+            while(pre -> next && pre ->next -> val < curr -> val)
+                pre = pre -> next;
+            
+            curr -> next = pre -> next;
+            pre -> next = curr;
+            pre = &dummy;
+            curr = next;
+        }
+        return dummy.next;
+    }
+};
