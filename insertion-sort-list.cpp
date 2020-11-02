@@ -27,3 +27,28 @@ public:
         return dummy.next;
     }
 };
+
+// straight forward solution
+class Solution {
+public:
+    ListNode* insertionSortList(ListNode* head) {
+        ListNode dummy(0);
+        dummy.next = head;
+        ListNode *pre = &dummy, *curr =head;
+        
+        while(curr){
+            if(curr -> next && curr -> next -> val < curr -> val){
+                while(pre -> next && pre -> next -> val < curr -> next -> val)
+                    pre = pre -> next;
+                ListNode* temp = pre -> next;
+                pre -> next = curr -> next;
+                curr -> next = curr -> next -> next;
+                pre -> next -> next = temp;
+                pre = &dummy;
+            }
+            else
+                curr = curr -> next;
+        }
+        return dummy.next;
+    }
+};
