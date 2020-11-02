@@ -385,3 +385,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
   * One half of the array will always be sorted.
   
+**79**
+[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)
+[Leetcode Explanation](https://leetcode.com/problems/insertion-sort-list/solution/)
+[Simple Code Explanation](https://leetcode.com/problems/insertion-sort-list/discuss/46423/Explained-C%2B%2B-solution-(24ms))
