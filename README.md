@@ -389,3 +389,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)
 [Leetcode Explanation](https://leetcode.com/problems/insertion-sort-list/solution/)
 [Simple Code Explanation](https://leetcode.com/problems/insertion-sort-list/discuss/46423/Explained-C%2B%2B-solution-(24ms))
+
+**80**
+[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+[Explanation](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/solution/)
