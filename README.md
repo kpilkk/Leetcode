@@ -393,3 +393,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **80**
 [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
 [Explanation](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/solution/)
+
+**81**
+[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+[Explanation](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/discuss/14699/Clean-iterative-solution-with-two-binary-searches-(with-explanation))
