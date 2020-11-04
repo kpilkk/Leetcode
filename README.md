@@ -398,3 +398,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 [Explanation](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/discuss/14699/Clean-iterative-solution-with-two-binary-searches-(with-explanation))
 [Divide and Conquer solution](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/discuss/14707/9-11-lines-O(log-n)/15080)
+
+**82**
+[Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)
+[Explanation](https://leetcode.com/problems/consecutive-characters/solution/)
