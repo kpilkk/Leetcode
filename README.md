@@ -402,3 +402,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **82**
 [Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)
 [Explanation](https://leetcode.com/problems/consecutive-characters/solution/)
+
+**83**
+[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
+[Explanation](https://leetcode.com/problems/longest-continuous-increasing-subsequence/solution/)
