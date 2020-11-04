@@ -406,3 +406,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **83**
 [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
 [Explanation](https://leetcode.com/problems/longest-continuous-increasing-subsequence/solution/)
+
+**84**
+[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)
+[Explanation](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)
