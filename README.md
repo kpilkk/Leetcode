@@ -422,3 +422,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **88**
 [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
+
+**89**
+[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
