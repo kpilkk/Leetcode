@@ -27,12 +27,6 @@ public:
         if(!root)
             return 0;
         
-        if(root -> left == root -> right)
-            return 1;
-        
-        int maxLeft = maxDepth(root -> left);
-        int maxRight = maxDepth(root -> right);
-        
-        return 1 + max(maxLeft, maxRight);
+        return 1 + max(maxDepth(root -> left), maxDepth(root -> right));
     }
 };
