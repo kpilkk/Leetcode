@@ -413,3 +413,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **85**
 [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+
+**86**
+[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
