@@ -416,3 +416,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **86**
 [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+**87**
+[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
