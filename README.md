@@ -425,3 +425,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **89**
 [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+**90**
+[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+[Explanation](https://leetcode.com/problems/symmetric-tree/solution/)
