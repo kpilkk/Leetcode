@@ -436,3 +436,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **92**
 [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 [Explanation](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/discuss/758462/C%2B%2B-Detail-Explain-or-Diagram)
+
+**93**
+[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
