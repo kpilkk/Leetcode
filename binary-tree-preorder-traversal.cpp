@@ -64,3 +64,35 @@ public:
         return ans;
     }
 };
+
+// Morris traversal
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> ans;
+        
+        while(root){
+            if(root -> left){
+                TreeNode* pre = root -> left;
+                while(pre -> right && pre -> right != root){
+                    pre = pre -> right;
+                }
+                if(pre -> right){
+                    pre -> right = nullptr;
+                    root = root -> right;
+                }
+                else{
+                    pre -> right = root;
+                    ans.emplace_back(root -> val);
+                    root = root -> left;
+                }
+            }
+            else{
+                ans.emplace_back(root -> val);
+                root = root -> right;
+            }
+        }
+        
+        return ans;
+    }
+};
