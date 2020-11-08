@@ -443,3 +443,4 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **94**
 [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+[Explanation](https://leetcode.com/problems/binary-tree-preorder-traversal/discuss/45466/C%2B%2B-Iterative-Recursive-and-Morris-Traversal)
