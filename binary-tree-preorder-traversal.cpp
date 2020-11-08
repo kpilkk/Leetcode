@@ -42,3 +42,25 @@ public:
         return ans;
     }
 };
+
+// Similar to stack implementation of inorder traversal with only 1 line difference
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> ans;
+        stack<TreeNode*> stack;
+        
+        while(root || !stack.empty()){
+            while(root){
+                ans.emplace_back(root -> val);
+                stack.emplace(root);
+                root = root -> left;
+            }
+            root = stack.top();
+            stack.pop();
+            root = root -> right;
+        }
+        
+        return ans;
+    }
+};
