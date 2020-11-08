@@ -18,3 +18,27 @@ public:
         helper(root -> right, ans);
     }
 };
+
+// Iterative solution using stack
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> ans;
+        stack<TreeNode*> stack;
+
+        while(root || !stack.empty()){
+            if(root){
+                ans.emplace_back(root -> val);
+                if(root -> right)
+                    stack.emplace(root -> right);
+                root = root -> left;
+            }
+            else{
+                root = stack.top();
+                stack.pop();
+            }
+        }
+        
+        return ans;
+    }
+};
