@@ -448,3 +448,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **95**
 [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 [Explanation](https://leetcode.com/problems/binary-tree-postorder-traversal/discuss/45550/C%2B%2B-Iterative-Recursive-and-Morris-Traversal)
+
+**96**
+[Number of Islands](https://leetcode.com/problems/number-of-islands/)
+[Explanation](https://leetcode.com/problems/number-of-islands/discuss/56589/C%2B%2B-BFSDFS)
