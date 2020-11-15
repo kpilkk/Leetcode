@@ -452,3 +452,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **96**
 [Number of Islands](https://leetcode.com/problems/number-of-islands/)
 [Explanation](https://leetcode.com/problems/number-of-islands/discuss/56589/C%2B%2B-BFSDFS)
+
+**97**
+[Open the Lock](https://leetcode.com/problems/open-the-lock/)
