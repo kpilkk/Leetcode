@@ -458,3 +458,7 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **98**
 [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+
+**99**
+[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
+[Explanation](https://leetcode.com/problems/valid-sudoku/solution/)
