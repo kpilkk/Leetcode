@@ -462,3 +462,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 **99**
 [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
 [Explanation](https://leetcode.com/problems/valid-sudoku/solution/)
+
+**100**
+[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
