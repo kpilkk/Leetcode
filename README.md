@@ -36,6 +36,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 
 **9**.
 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+[Recursive Explanation](https://leetcode.com/problems/validate-binary-search-tree/discuss/959657/C%2B%2B-recursive-solution-passing-all-test-cases)
 [Explanation](https://leetcode.com/articles/validate-binary-search-tree/)
 
 **10**.
