@@ -38,6 +38,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 [Recursive Explanation](https://leetcode.com/problems/validate-binary-search-tree/discuss/959657/C%2B%2B-recursive-solution-passing-all-test-cases)
 [Explanation](https://leetcode.com/articles/validate-binary-search-tree/)
+* Must [read](https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)) to solve various problems on Trees.
 
 **10**.
 [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
