@@ -21,6 +21,7 @@ public:
 };
 
 // stack based solution - iterative
+// Similar to inorder traversal using stack
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {
