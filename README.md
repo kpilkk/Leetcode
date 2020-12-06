@@ -467,3 +467,6 @@ Without constraints, we just simply print out “(“ or “)” until length hi
 
 **100**
 [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
+
+**101**
+[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
