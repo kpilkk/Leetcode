@@ -13,3 +13,27 @@ public:
         return root;
     }
 };
+
+// Iterative solution
+class Solution {
+public:
+    TreeNode* insertIntoBST(TreeNode* root, int val) {
+        if(!root)
+            return new TreeNode(val);
+        TreeNode *temp = root, *pre = nullptr;
+        while(root){
+            pre = root;
+            if(val < root -> val){
+                root = root -> left;
+            }
+            else{
+                root = root -> right;
+            }
+        }
+        if(val < pre -> val)
+            pre -> left = new TreeNode(val);
+        else
+            pre -> right = new TreeNode(val);
+        return temp;
+    }
+};
