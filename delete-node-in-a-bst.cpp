@@ -11,10 +11,16 @@ public:
         else if(key > root -> val)
             root -> right = deleteNode(root -> right, key);
         else{
-            if(!root -> left)
-                return root -> right;
-            else if(!root -> right)
-                return root -> left;
+            if(!root -> left){
+                TreeNode* temp = root -> right;
+                delete root;
+                return temp;
+            }
+            else if(!root -> right){
+                TreeNode* temp = root -> left;
+                delete root;
+                return temp;
+            }
             TreeNode* minNode = findMin(root -> right);
             root -> val = minNode -> val;
             root -> right = deleteNode(root -> right, minNode -> val);
