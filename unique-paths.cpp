@@ -27,3 +27,21 @@ public:
         return dp[n - 1];
     }
 };
+
+// Using Maths
+class Solution {
+public:
+    int uniquePaths(int m, int n) {
+        long long ans = 1;
+        int tot = m + n - 2;
+        int mini = min(m - 1, n - 1);
+        for(int i = 0; i < mini; ++i){
+            ans *= (tot - i);
+        }
+        for(int i = 0; i < mini; ++i){
+            ans /= (mini - i);
+        }
+        
+        return ans;
+    }
+};
