@@ -480,3 +480,10 @@ Once the node is found, have to handle the below 4 cases
    * node only has left subtree- return the left subtree
    * node only has right subtree- return the right subtree
    * node has both left and right - find the minimum value in the right subtree, set that value to the currently found node, then recursively delete the minimum value in the right subtree
+
+**103**
+[Unique Paths](https://leetcode.com/problems/unique-paths/)
+
+**104**
+[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+[Explanation](https://leetcode.com/problems/unique-paths-ii/solution/)
