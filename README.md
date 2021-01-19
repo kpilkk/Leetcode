@@ -487,3 +487,8 @@ Once the node is found, have to handle the below 4 cases
 **104**
 [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
 [Explanation](https://leetcode.com/problems/unique-paths-ii/solution/)
+
+**105**
+[N-Queens](https://leetcode.com/problems/n-queens/)
+[Leetcode Explanation](https://leetcode.com/problems/n-queens/solution/)
+[C++ Explanation](https://leetcode.com/problems/n-queens/discuss/19808/Accepted-4ms-c%2B%2B-solution-use-backtracking-and-bitmask-easy-understand.)
