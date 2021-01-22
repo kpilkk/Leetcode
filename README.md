@@ -492,3 +492,7 @@ Once the node is found, have to handle the below 4 cases
 [N-Queens](https://leetcode.com/problems/n-queens/)
 [Leetcode Explanation](https://leetcode.com/problems/n-queens/solution/)
 [C++ Explanation](https://leetcode.com/problems/n-queens/discuss/19808/Accepted-4ms-c%2B%2B-solution-use-backtracking-and-bitmask-easy-understand.)
+
+**106**
+[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)
+[Explanation](https://leetcode.com/problems/bulls-and-cows/discuss/74618/C%2B%2B-4ms-Straight-forward-solution-two-pass-O(N)-time)
