@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 
-// Brute force time limit exceeded
+// Brute force time limit exceeded - O(n2)
 class Solution {
 public:
     int findLength(vector<int>& nums1, vector<int>& nums2) {
