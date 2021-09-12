@@ -1,5 +1,6 @@
 # Leetcode
-solved leetcode problems
+Solved Leetcode Problems
+---------------------------
 
 **1**.
 [Two Sum](https://leetcode.com/problems/two-sum/)
@@ -510,3 +511,8 @@ Once the node is found, have to handle the below 4 cases
 **110**
 [Shifting Letters](https://leetcode.com/problems/shifting-letters/)
 [Explanation](https://leetcode.com/problems/shifting-letters/solution/)
+
+
+**111**
+[Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+[Explanation](https://leetcode.com/problems/basic-calculator/discuss/1457045/C%2B%2B-oror-Explained-oror-Stacks-oror-Beginner-FriendlyEasy-To-Understand)
