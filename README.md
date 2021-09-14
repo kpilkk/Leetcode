@@ -521,3 +521,7 @@ Once the node is found, have to handle the below 4 cases
 [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/)
 [Explanation Leetcode](https://leetcode.com/problems/largest-plus-sign/solution/)
 [Better Explanation](https://leetcode.com/problems/largest-plus-sign/discuss/1453636/Intuitiveor-Explained-with-image-or-Short-and-Clean-or-C%2B%2B)
+
+**113**
+[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)
+[Explanation](https://leetcode.com/problems/maximum-number-of-balloons/solution/)
