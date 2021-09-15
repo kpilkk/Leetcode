@@ -529,3 +529,7 @@ Once the node is found, have to handle the below 4 cases
 **114**
 [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)
 [Explanation](https://leetcode.com/problems/reverse-only-letters/solution/)
+
+**115**
+[Binary Search](https://leetcode.com/problems/binary-search/)
+[Explanation](https://leetcode.com/problems/binary-search/discuss/423162/Binary-Search-101)
