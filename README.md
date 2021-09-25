@@ -142,6 +142,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 **27**.
 [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 [Explanation](https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c%2B%2B-solution-O(1)-space-and-O(n)-time)
+[GFG Explanation](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)
 
 **28**.
 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
