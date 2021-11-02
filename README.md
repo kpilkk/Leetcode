@@ -119,8 +119,6 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 
 **22**.
 [Single Number](https://leetcode.com/problems/single-number/)
-[Explanation](https://leetcode.com/articles/single-number/)
-
 
 .**23**.
 [Happy Number](https://leetcode.com/problems/happy-number/)
@@ -199,7 +197,7 @@ It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articl
 [Explanation](https://leetcode.com/problems/missing-number/solution/)
 
 **42**
-[Single NUmber II](https://leetcode.com/problems/single-number-ii/)
+[Single Number II](https://leetcode.com/problems/single-number-ii/)
 [Explanation 1](https://stackoverflow.com/a/59867358/7283174)
 [Explanation 2](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/176039)
 [Explanation 3](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/42094)
@@ -534,3 +532,6 @@ Once the node is found, have to handle the below 4 cases
 **115**
 [Binary Search](https://leetcode.com/problems/binary-search/)
 [Explanation](https://leetcode.com/problems/binary-search/discuss/423162/Binary-Search-101)
+
+**116**
+[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
