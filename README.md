@@ -535,3 +535,7 @@ Once the node is found, have to handle the below 4 cases
 
 **116**
 [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+
+**117**
+[Rotate Array](https://leetcode.com/problems/rotate-array/)
+[Explanation](https://leetcode.com/problems/rotate-array/discuss/1557184/Two-methods-to-solve-the-problem)
