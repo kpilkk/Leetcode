@@ -539,3 +539,9 @@ Once the node is found, have to handle the below 4 cases
 **117**
 [Rotate Array](https://leetcode.com/problems/rotate-array/)
 [Explanation](https://leetcode.com/problems/rotate-array/discuss/1557184/Two-methods-to-solve-the-problem)
+
+**118**
+[Reverse String](https://leetcode.com/problems/reverse-string/)
+
+**119**
+[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
