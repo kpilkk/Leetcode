@@ -545,3 +545,6 @@ Once the node is found, have to handle the below 4 cases
 
 **119**
 [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
+
+**120**
+[Gray Code](https://leetcode.com/problems/gray-code/)
