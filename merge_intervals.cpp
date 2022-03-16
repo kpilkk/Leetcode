@@ -2,12 +2,9 @@
 
 class Solution {
 public:
-    static bool compare(vector<int>& i1, vector<int>& i2){
-        return (i1[0]<i2[0]);
-    }
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         if(intervals.size()==0) return intervals;
-        sort(intervals.begin(), intervals.end(), compare);
+        sort(intervals.begin(), intervals.end());
         vector<vector<int>> res;
         res.push_back(intervals[0]);
         for(int i=1;i<intervals.size();++i){
