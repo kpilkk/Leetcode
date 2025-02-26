@@ -1,25 +1,38 @@
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
+#include <unordered_set>
+#include <unordered_map>
+#include <set>
+#include <string>
+using namespace std;
 // Brute Force : Time Limit Exceded
-class Solution {
+class Solution
+{
 public:
-    int lengthOfLongestSubstring(string s) {
+    int lengthOfLongestSubstring(string s)
+    {
         int n = s.length();
         int ans = 0;
-        for(int i = 0; i < n; ++i){
-            for(int j = i + 1; j <= n; ++j){
-                if(allUnique(s, i, j))
+        for (int i = 0; i < n; ++i)
+        {
+            for (int j = i + 1; j <= n; ++j)
+            {
+                if (allUnique(s, i, j))
                     ans = max(ans, j - i);
             }
         }
         return ans;
-    } 
+    }
+
 private:
-    bool allUnique(string s, int start, int end){
+    bool allUnique(string s, int start, int end)
+    {
         set<char> temp;
-        for(int i = start; i < end; ++i) {
+        for (int i = start; i < end; ++i)
+        {
             char ch = s[i];
-            if(temp.find(ch) != temp.end()) return false;
+            if (temp.find(ch) != temp.end())
+                return false;
             temp.emplace(ch);
         }
         return true;
@@ -27,39 +40,61 @@ private:
 };
 
 // 2nd slution
-
-class Solution {
+class Solution
+{
 public:
-    int lengthOfLongestSubstring(string s) {
-        int n = s.length();
-        int ans = 0;
-        map<char, int> st;
-        for(int j=0, i=0; j<n;++j){
-            if(st.find(s[j])!=st.end())
-                i = max(st[s[j]], i);
-            ans = max(ans, j-i+1);
-//             st.insert(make_pair(s[j], j+1));
-            st[s[j]] = j + 1;
+    int lengthOfLongestSubstring(string s)
+    {
+        // bool isCharSet[100] = {false};
+        unordered_set<char> mp;
+
+        int left = 0, right = 0;
+
+        int maxLength = 0;
+        while (right < s.length())
+        {
+            while (mp.find(s[right]) != mp.end())
+            {
+                mp.erase(s[left]);
+                ++left;
+            }
+            // isCharSet[s[right] - 'a'] = true;
+            mp.insert(s[right]);
+            maxLength = max(maxLength, (right - left) + 1);
+            right++;
         }
-        return ans;
+
+        return maxLength;
     }
 };
 
 // 3rd solution
-class Solution {
+
+class Solution
+{
 public:
-    int lengthOfLongestSubstring(string s) {
-        int n = s.length();
-        set<char> s;
-        int ans = 0, i=0, j=0;
-        while(i<n && j<n){
-            if(s.find(s[j])==s.end()){
-                s.insert(s[j++]);
-                ans = max(ans ,j-i);
+    int lengthOfLongestSubstring(string s)
+    {
+        unordered_map<char, int> um;
+
+        int maxAns = 0, right = 0, left = -1;
+
+        while (right < s.length())
+        {
+            if (um.find(s[right]) != um.end())
+            {
+                int temp = left;
+                left = um[s[right]];
+                for (int i = temp + 1; i <= left; ++i)
+                {
+                    um.erase(s[i]);
+                }
             }
-            else
-                s.erase(s[i++]);
+            um[s[right]] = right;
+            maxAns = max(maxAns, right - left);
+            ++right;
         }
-        return ans;
-        }
+
+        return maxAns;
+    }
 };
