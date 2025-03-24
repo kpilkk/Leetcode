@@ -12,20 +12,39 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
- 
-class Solution {
+
+#include <vector>
+#include <set>
+#include <queue>
+
+using namespace std;
+
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+class Solution
+{
 public:
-    bool findTarget(TreeNode* root, int k) {
-        set<int> temp;
-        
+    bool findTarget(TreeNode *root, int k)
+    {
+        set<int> temp; // unordered_set can also be used
+
         return find(root, k, temp);
     }
-    
+
 private:
-    bool find(TreeNode *root, int k, set<int>& temp){
-        if(root == NULL)
+    bool find(TreeNode *root, int k, set<int> &temp)
+    {
+        if (root == nullptr)
             return false;
-        if(temp.find(k-root->val)!=temp.end())
+        if (temp.find(k - root->val) != temp.end())
             return true;
         temp.emplace(root->val);
         return find(root->left, k, temp) || find(root->right, k, temp);
@@ -34,24 +53,29 @@ private:
 
 // Approach #2 Using BFS and HashSet
 
-class Solution {
+class Solution
+{
 public:
-    bool findTarget(TreeNode* root, int k) {
+    bool findTarget(TreeNode *root, int k)
+    {
         set<int> temp;
-        queue<TreeNode*> q;
-        
+        queue<TreeNode *> q;
+
         q.emplace(root);
-        while(!q.empty()){
-            if(q.front() != NULL){
+        while (!q.empty())
+        {
+            if (q.front() != nullptr)
+            {
                 TreeNode *node = q.front();
                 q.pop();
-                if(temp.find(k - node->val) != temp.end())
+                if (temp.find(k - node->val) != temp.end())
                     return true;
                 temp.emplace(node->val);
                 q.emplace(node->right);
                 q.emplace(node->left);
             }
-            else{
+            else
+            {
                 q.pop();
             }
         }
@@ -61,29 +85,33 @@ public:
 
 // Approach #3 Using BST
 
-class Solution {
+class Solution
+{
 public:
-    bool findTarget(TreeNode* root, int k) {
+    bool findTarget(TreeNode *root, int k)
+    {
         vector<int> temp;
         inorder(root, temp);
-        
-        int l = 0, r = temp.size()-1;
-        
-        while(l<r){
+
+        int l = 0, r = temp.size() - 1;
+
+        while (l < r)
+        {
             int sum = temp[l] + temp[r];
-            if(sum==k)
+            if (sum == k)
                 return true;
-            else if(sum<k)
+            else if (sum < k)
                 l++;
             else
                 r--;
         }
         return false;
     }
-    
+
 private:
-    void inorder(TreeNode* root, vector<int>& temp){
-        if(root == NULL)
+    void inorder(TreeNode *root, vector<int> &temp)
+    {
+        if (root == nullptr)
             return;
         inorder(root->left, temp);
         temp.push_back(root->val);
