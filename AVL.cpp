@@ -99,6 +99,98 @@ Node *insert(Node *node, int key)
     return node;
 }
 
+Node *minValueNode(Node *root)
+{
+    Node *current = root;
+    while (current->left != nullptr)
+        current = current->left;
+
+    return current;
+}
+
+Node *deleteNode(Node *root, int key)
+{
+    if (root == nullptr)
+        return root;
+    if (key < root->key)
+        root->left = deleteNode(root->left, key);
+    else if (key > root->key)
+        root->right = deleteNode(root->right, key);
+    else
+    {
+        Node *temp = root;
+        if (root->left == nullptr && root->right == nullptr)
+        {
+            root = nullptr;
+            delete temp;
+        }
+        else if (root->left == nullptr)
+        {
+            root = root->right;
+            delete temp;
+        }
+        else if (root->right == nullptr)
+        {
+            root = root->left;
+            delete temp;
+        }
+        else
+        {
+            Node *temp1 = minValueNode(root->right);
+            root->key = temp1->key;
+            root->right = deleteNode(root->right, temp1->key);
+        }
+    }
+
+    if (root == nullptr)
+        return root;
+
+    root->height = 1 + std::max(height(root->left), height(root->right));
+
+    int balance = balanceFactor(root);
+
+    // Left Left Case
+    //     30
+    //    /
+    //  20
+    //  /
+    // 10   <- Inserted here (causes imbalance at 30)
+    if (balance > 1 && key < root->left->key)
+        return rightRotate(root);
+    // Right Right Case
+    // 10
+    //    \
+    //    20
+    //      \
+    //      30  <- Inserted here (causes imbalance at 10)
+    else if (balance < -1 && key > root->right->key)
+        return leftRotate(root);
+    // Left Right Case
+    //     30
+    //    /
+    //  20
+    //    \
+    //    25  <- Inserted here (causes imbalance at 30)
+    else if (balance > 1 && key > root->left->key)
+    {
+        root->left = leftRotate(root->left);
+        return rightRotate(root);
+    }
+    // Right Left Case
+    // 10
+    //    \
+    //    30
+    //    /
+    //  20  <- Inserted here (causes imbalance at 10)
+    else if (balance < -1 && key < root->right->key)
+    {
+        root->right = rightRotate(root->right);
+        return leftRotate(root);
+    }
+
+    return root;
+}
+
 void inorder(Node *root)
 {
     if (!root)
@@ -120,5 +212,11 @@ int main()
 
     // The AVL tree is now balanced
     inorder(root); // Function to print the tree in-order
+
+    root = deleteNode(root, 10);
+
+    std::cout << "\nAfter deleting : ";
+
+    inorder(root);
     return 0;
 }
